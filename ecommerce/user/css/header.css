@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-custom {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.nav-item {
+    display: none;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .text-warning {
+    color: #ffc107;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .text-warning:hover {
+    color: #ffffff;
+}
+
+.navbar-custom .btn-icon {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-left: 10px;
+}
+
+.navbar-custom .btn-icon:hover {
+    color: #ffc107;
+}
+
+.sub-header a {
+    color: #fff;
+    padding: .75rem 1.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.sub-header a:hover {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.sub-header hr {
+    border-top: 1px solid white;
+    margin: 0;
+}
+
+.sub-header li {
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+
+.sub-header li:last-child {
+    border-right: none;
+}
+
+.hero {
+    position: relative;
+    background: url('../images/shop3.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    height: 60vh;
+    z-index: 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .d-lg-flex {
+        display: flex !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar-custom {
+        position: fixed;
+        top: 0;
+        background-color: gray;
+        z-index: 1000;
+    }
+
+    #logout1 {
+        display: none;
+    }
+
+    #logout2 {
+        font-size: 1.30rem;
+    }
+
+    .navbar-toggler {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 1.25rem;
+        margin-left: 10px;
+    }
+
+    .nav-item {
+        display: block;
+    }
+
+    .logo {
+        height: 30px;
+        width: 60px;
+    }
+
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: 0;
+        background-color: rgba(52, 58, 64, 0.9);
+        z-index: 900;
+        padding-left: 10px;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .form-inline,
+    .btn-icon {
+        background-color: gray;
+    }
+
+    .navbar-custom .btn-icon {
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 1rem;
+        margin-left: -10px;
+    }
+
+    #navbarSupportedContent {
+        height: 100vh;
+        z-index: 100;
+    }
+
+    body {
+        padding-top: 56px;
+
+    }
+}
+
+
+
+.form-inline {
+    display: none;
+    margin-left: 10px;
+}
+
+.form-inline.show {
+    display: flex;
+}
+
+.profile-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}

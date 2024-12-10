@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+}

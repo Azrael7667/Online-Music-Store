@@ -1,0 +1,114 @@
+
+    body {
+        background: url('shop2.png') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 900px;
+        margin-top: 50px;
+    }
+    .side-image {
+        background-image: url("../images/login.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px 0 0 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 30px;
+        height: 550px;
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+    .side-image .text {
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .right {
+        background: #fff;
+        border-radius: 0 10px 10px 0;
+        padding: 30px;
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-box {
+        width: 100%;
+        max-width: 350px;
+    }
+    .input-box header {
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 45px;
+        font-size: 2rem;
+        color: #333;
+    }
+    .input-field {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .input-field input {
+        height: 45px;
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        outline: none;
+        color: #333;
+        font-size: 1.1rem;
+    }
+    .input-field label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        pointer-events: none;
+        transition: .5s;
+        color: #777;
+        font-size: 1rem;
+    }
+    .input-field input:focus ~ label, .input-field input:valid ~ label {
+        top: -15px;
+        font-size: 0.9rem;
+        color: #743ae1;
+    }
+    .submit {
+        border: none;
+        outline: none;
+        height: 45px;
+        background: #ececec;
+        border-radius: 5px;
+        transition: .4s;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    .submit:hover {
+        background: rgba(37, 95, 156, 0.937);
+        color: #fff;
+    }
+    .signin {
+        text-align: center;
+        font-size: small;
+        margin-top: 25px;
+        color: #777;
+    }
+    .signin a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #333;
+        transition: .5s;
+    }
+    .signin a:hover {
+        text-decoration: underline;
+        color: #743ae1;
+    }
